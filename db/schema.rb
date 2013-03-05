@@ -13,6 +13,10 @@
 
 ActiveRecord::Schema.define(version: 20130128200531) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+  enable_extension "hstore"
+
   create_table "categories", force: true do |t|
     t.string   "name"
     t.datetime "created_at"
@@ -47,11 +51,5 @@ ActiveRecord::Schema.define(version: 20130128200531) do
   end
 
   add_index "posts", ["category_id"], name: "index_posts_on_category_id"
-
-  create_table "tags", force: true do |t|
-    t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
 
 end
