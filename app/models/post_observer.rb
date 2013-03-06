@@ -1,4 +1,4 @@
-class PostObserver < ActiverRecord::Observer
+class PostObserver < ActiveRecord::Observer
   def after_save record
     # ...
   end
