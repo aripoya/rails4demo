@@ -3,6 +3,7 @@ source 'https://rubygems.org'
 gem 'rails',     github: 'rails/rails'
 gem 'arel',      github: 'rails/arel'
 gem 'activerecord-deprecated_finders', github: 'rails/activerecord-deprecated_finders'
+gem 'rails-observers', github: 'rails/rails-observers'
 
 gem 'sqlite3'
 gem 'pg'
@@ -25,3 +26,5 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.0.1'
 
 gem 'bootstrap-sass'
+
+gem 'capistrano'
